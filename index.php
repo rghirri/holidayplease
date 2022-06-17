@@ -9,14 +9,14 @@ $conn = include "includes/db.php";
 
 $data = BookingManager::getStatus($conn);
 
-// foreach($data as $item)
-// {
-//    // if($item['id'] == 1){
-//     echo $item['customer_name'] . ' booking status is ' . $item['status'];
-//    //}
-// }
+foreach($data as $item)
+{
+   if($item['id'] == 3){
+    echo $item['customer_name'] . ' booking status is ' . $item['status'];
+   }
+}
 
-var_dump($data);
+//var_dump($data);
 
 // if ($conn){
 //  echo "Connected successfully";
